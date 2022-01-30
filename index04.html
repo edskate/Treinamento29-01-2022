@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+              <meta charset="UTF-8">
+              <meta http-equiv="X-UA-Compatible" content="IE=edge">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Document</title>
+</head>
+<body>
+            <h1> Tabelas</h1>
+              As tabelas são em HTML exatamente o que são em qualquer outro lugar. Elas servem
+              para organizar os dados de uma maneira que fique mais fácil para as pessoas entenderem ou
+              tornar mais rápida a comunicação em determinadas ocasiões.
+              Vamos diretamente ao uso dessas tabelas para depois entrarmos em detalhes. Crie um
+              arquivo chamado 'tabelas.html' e coloque o seguinte código.
+             
+              <title>Uma p&aacute;gina com tabelas</title>
+             
+              <table border="1">
+              <tr>
+              <th>Parte do computador</th>
+              <th>O que ela faz</th>
+              </tr>
+              <tr>
+              <td>Teclado</td>
+              <td>Onde voc&ecirc; digita</td>
+              </tr>
+              <tr>
+              <td>Mouse</td>
+              <td>Onde voc&ecirc; mexe a seta</td>
+              </tr>
+              </table>
+            
+              Você vai criar uma tabela com a tag '<table>'. A partir daí, você deve definir as linhas
+              com a tag '<tr>' e as colunas com '<td>'. Cada um dos valores colocados entre as tags '<td>' é
+              considerado estar dentro de uma célula. A tag '<th>' é usada para o cabeçalho da tabela, um
+              texto destacado para explicar um pouco sobre a coluna em questão. O atributo 'border' da tag
+              '<table>' determina a largura da borda da tabela, experimente usar um valor diferente para
+              ver o resultado.
+              Agora insira dentro da tabela, depois dos outros itens as seguintes linhas:
+              <tr>
+              <td>Adesivo no monitor</td>
+              <td></td> <!-- n&atilde;o faz nada :)-->
+              </tr>
+              Recarregue o arquivo e você notará que a célula onde não há nada também ficará sem
+              borda, o que pode dar uma aparência desagradável para o usuário, solucione o problema
+              colocando o caracter especial '&nbsp;' nela.
+              <tr>
+              <td>Adesivo no monitor</td>
+              <td>&nbsp;</td> <!-- n&atilde;o faz nada :)-->
+              </tr>
+              Ele faz com que serja inserido um caracter em branco (non-breaking space), diferente
+              de se colocar um espaço normal lá, que o navegador deixa de interpretar. Dessa forma, você
+              engana a tabela como se tivesse realmente algo escrito lá, que de fato há, mas o usuário não
+              verá isso.
+              É possível também fazer tabelas sem bordas, dependendo do seu objetivo:
+              <h4>A mesma tabela, sem bordas e com legenda</h4>
+              <table border="0">
+              <caption align="top"><i>Minha legenda</i></caption>
+              <caption align="bottom"><i>Minha outra legenda, abaixo da
+              tabela</i></caption>
+              <tr>
+              <th>Parte do computador</th>
+              <th>O que ela faz</th>
+              </tr>
+              <tr>
+              <td>Teclado</td>
+              <td>Onde voc&ecirc; digita</td>
+              </tr>
+              <tr>
+              <td>Mouse</td>
+              <td>Onde voc&ecirc; mexe a seta</td>
+              </tr>
+              <tr>
+              <td>Adesivo no monitor</td>
+              <td>&nbsp;</td> <!-- n&atilde;o faz nada :)-->
+              </table>
+              Além da borda de tamanho zero (ou sem borda, se preferir), temos mais duas tags que
+              até então não havíamos apresentado, uma delas se refere à tabela e a outra não. A tag
+              '<caption>' serve para se colocar uma legenda na tabela e pode carregar o atributo 'align',
+              que determinará se ela aparecerá em cima ou em baixo. A outra tag, '<i>', pode ser usada em
+              qualquer lugar do texto e serve para deixar o texto que está entre seu início e fechamento em
+              itálico, assim como a tag '<b>' faz ao passar para negrito.
+              Agora mostraremos alguns exemplos onde queremos que um determinado campo
+              ocupe mais de uma célula.
+              <h4>Telefone de algumas pessoas que acabei de inventar</h4>
+              <table border="1">
+              <tr>
+              <th>Nome</th>
+              <th colspan="2">Telefone</th>
+              </tr>
+              <tr>
+              <td>Jo&atilde;o Frango</td>
+              <td>33 2548 3549</td>
+              <td>33 2544 3578</td>
+              </tr>
+              <tr>
+              <td>Valpano</td>
+              <td>44 2578 3258</td>
+              <td>44 2566 5799</td>
+              </tr>
+              </table>
+              <br />
+              <h4>Telefone das mesmas pessoas que acabei de inventar, formatando
+              diferente</h4>
+              <table border="1">
+              <tr>
+              <th>Nome</th>
+              <td>Jo&atilde;o Frango</td>
+              <td>Valpano</td>
+              </tr>
+              <tr>
+              <th rowspan="2">Telefone</th>
+              <td>33 2548 3549</td>
+              <td>33 2544 3578</td>
+              </tr>
+              <tr>
+              <td>44 2578 3258</td>
+              <td>44 2566 5799</td>
+              </tr>
+              </table>
+              O exemplo acima, além da utilidade proposta, mostra mais uma coisa: os cabeçalhos
+              não precisam necessariamente ser o primeiro elemento da coluna. Na segunda tabela
+              percebemos que ele está na verdade referindo-se à linha onde ele está. Voltando ao tema,
+              usamos os atributos 'colspan' e 'rowspan' para estendermos uma célula, ambos estão
+              disponíveis tanto para '<th>' quanto para '<td>'. O valor do atributo determinará quantas
+              células o campo ocupará, 'colspan' para colunas e 'rowspan' para linhas.
+              Vale notar que é possível alinhas tabelas e colocar quaisquer outras tags dentro das
+              células. É possível, por exemplo, fazer uma lista dentro de uma célula de uma tabela, inclusive
+              aninhá-las. Só tome cuidado para não fazer algo tão complicado que você possa se perder ao
+              desenvolver.
+              Outra possibilidade ao trabalhar com tabelas é alterar a distância entre o texto e as
+              bordas da tabela. Esse parâmetro é controlado pelo atributo 'cellpadding' e pode ser
+              observado no exemplo a seguir.
+              <h4>Tabela sem espa&ccedil;amento entre texto e bordas</h4>
+              <table border="1" cellpadding="0">
+              <tr>
+              <td>1</td>
+              <td>2</td>
+              </tr>
+              <tr>
+              <td>3</td>
+              <td>4</td>
+              </tr>
+              </table>
+              <br />
+              <h4>Tabela com espa&ccedil;amento entre texto e bordas</h4>
+              <table border="1" cellpadding="15">
+              <tr>
+              <td>1</td>
+              <td>2</td>
+              </tr>
+              <tr>
+              <td>3</td>
+              <td>4</td>
+              </tr>
+              </table>
+              Além de espaçamento entre texto e bordas também podemos deixar uma distância
+              entre uma célula e outra com o atributo 'cellspacing', confira nesse outro exemplo.
+              <h4>Tabela sem espa&ccedil;amento entre c&eacute;lulas</h4>
+              <table border="1" cellspacing="0" bgcolor="yellow">
+              <tr>
+              <td>1</td>
+              <td>2</td>
+              </tr>
+              <tr>
+              <td>3</td>
+              <td>4</td>
+              </tr>
+              </table>
+              <br />
+              <h4>Tabela com espa&ccedil;amento entre c&eacute;lulas</h4>
+              <table border="1" cellspacing="15">
+              <tr>
+              <td bgcolor="yellow">amarelo</td>
+              <td bgcolor="red">vermelho<td>
+              </tr>
+              <tr>
+              <td bgcolor="green">verde</td>
+              <td bgcolor="blue">azul</td>
+              </tr>
+              </table>
+              Tanto a tabela toda como cada uma das células tratam do atributo background, assim
+              como fizemos anteriormente com a tag '<body>'. Desse modo, é possível alterar a cor desses
+              elementos, como você pode observar no exemplo acima.
+              Ainda podemos alinhar o texto dentro de uma célula pelo atributo 'align' da mesma
+              maneira como fizemos em outros lugares, o exemplo abaixo é uma alteração daquela nossa
+              "agenda de telefones".
+              <h4>Telefone das mesmas pessoas que acabei de inventar, formatando
+              diferente</h4>
+              <table border="1">
+              <tr>
+              <th>Nome</th>
+              <td align="center">Jo&atilde;o Frango</td>
+              <td align="center">Valpano</td>
+              </tr>
+              <tr>
+              <th rowspan="2">Telefone</th>
+              <td>33 2548 3549</td>
+              <td>33 2544 3578</td>
+              </tr>
+              <tr>
+              <td>44 2578 3258</td>
+              <td>44 2566 5799</td>
+              </tr>
+              </table>
+              Note que o nome das pessoas agora estão centralizados nas células.
+              Existem outros atributos que não apresentaremos aqui para não alongarmos demais
+              essa parte, com o conteúdo apresentando até aqui já é possível construir tabelas bem
+              completas.    
+</body>
+</html>
