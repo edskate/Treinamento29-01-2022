@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+              <meta charset="UTF-8">
+              <meta http-equiv="X-UA-Compatible" content="IE=edge">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Document</title>
+</head>
+<body>
+            <h2>  Agora vamos explicar algumas coisas sobre o exercício acima.</h2>
+            Primeiramente, tudo que
+              estiver entre os sinais de menor que e maior que ('<' e '>'), incluindo eles são chamadas
+              'tags'. As tags são partes importantes em documentos HTML, elas são as responsáveis por toda
+              a formatação do texto. Com elas você pode dividir o documento em área de cabeçalho e corpo,
+              colocar títulos, criar tabelas, divisões, formulários e ainda formatar trechos específicos do
+              texto, como a parte em negrito acima.
+              A primeira tag <html>. Ela diz ao navegador que esse ponto marca o início de um
+              documento HTML, enquanto que a última tag </html> diz a ele exatamente o que é esperado,
+              que esse é o fim do documento HTML. O texto que está compreendido entre as tags <head> e
+              </head> é informação sobre a área de cabeçalho, como você pode perceber com <title> e </
+              title> onde o texto que está entre essas tags aparecerá no título da janela do navegador.
+              Prosseguindo, temos as tags <body> e </body> que são responsáveis por guardar os
+              dados referentes ao corpo do documento. Isso significa que o texto que estiver entre elas será
+              exibido pelo navegador. Por fim, as tags <b> e </b> farão com que o texto entre elas seja
+              exibido em negrito (em inglês, bold).
+              Você já deve ter percebido que as tags utilizadas sempre têm um "fechamento" como  
+              
+              
+              <br>
+              por exemplo, <html> -> </html>, <head> -> </head> e <body> -> </body>. Isso realmente é
+              valido para uma grande quantidade delas, mas não será onipresente, portanto fique atento.
+              Uma consideração a ser feita sobre as tags é que elas não são sensíveis à caixa, o que
+              significa que <b> é o mesmo que <B> embora as convenções atuais incentivem o uso de todas
+              as tags em letras minúsculas. Então, para seguir os mais novos padrões web você deve usar
+              letras minúsculas. O padrão xHTML demanda necessariamente o uso delas.
+              Uma outra questão que pode surgir é sobre a extensão dos arquivos. Antigamente,
+              muitos sistemas não permitiam salvar extensões que tivessem mais do que três caracteres e
+              por isso era comum ver arquivos com nomes como 'index.htm' ou 'home.htm'. Hoje em dia é
+              raro encontrarmos um sistema moderno que não permita extensões com um número de
+              caracteres que vai muito além de três, logo é totalmente aceitável usar 'index.html' ou
+              'home.html' como é o caso do nosso último exemplo (teste.html).
+              Os espaços utilizados para separar uma palavra da outra aparecerão normalmente na
+              sua visualização, porém, caso você use mais de um espaço, eles não serão considerados. Para
+              que isso ocorra, é preciso usar uma tag especial.
+              Trataremos agora dos elementos HTML. Considerando o nosso último exemplo, '<b>Esse
+              texto est&aacute; em negrito</b>' é um elemento onde: 1) o elemento HTML inicia-se com a
+              tag de início '<b>'; 2) o conteúdo do elemento é 'Esse texto est&aacute; em negrito', e; 3) o
+              elemento HTML termina com a tag de fim '</b>'.
+              Também é um elemento HTML o seguinte trecho:
+              <body>
+              Essa &eacute; a minha primeira p&aacute;gina. <b>Esse texto est&aacute; em
+              negrito.</b>
+              </body>
+              O início do elemento é '<body>' e o fim '</body>'.
+              Um detalhe importante a ser mostrado aqui é o que diz respeito à acentuação. Você
+              deve ter notado algumas coisas "estranhas" nos exemplos acima, como '&eacute;' ou
+              '&aacute;'. Essas são referências para os caracteres especiais como 'é' ou 'á' no exemplo
+              acima, mas que também são utilizados em outros casos. O uso deles se deve ao fato de que
+              alguns caracteres são reservados, facilmente perceptível em '<' e '>' que servem para abrir e
+              fechar tags. O que faríamos para inserir esses caracteres em um texto dentro do HTML?
+              Usamos referências especiais para tal, seguindo o exemplo '&lt;' e '&gt;'. Falaremos mais sobre
+              eles na hora devida.
+              Usaremos agora algumas tags para tornarmos nosso texto mais complexo. Abra o editor
+              de textos e crie o arquivo 'teste2.html'. Escreva o código a seguir.
+              Cabeçalhos, parágrafos e quebras de linha
+              <html>
+              <head>
+              <title>Exemplos de texto com cabe&ccedil;alho, par&aacute;grafos e quebras
+              de linha</title>
+              </head>
+              <body>
+              <h1>Esse &eacute; um cabe&ccedil;alho muito grande</h1>
+              <h2>Esse &eacute; um cabe&ccedil;alho um pouco menor, mas bem grande
+              ainda</h2>
+              <h3>Esse &eacute; um cabe&ccedil;alho nem t&atilde;o grande assim</h3>
+              <h4>Esse &eacute; um cabe&ccedil;alho m&eacute;dio</h4>
+              <h5>Esse &eacute; um cabe&ccedil;alho pequeno</h5>
+              <h6>Esse &eacute; um cabe&ccedil;alho muito pequeno</h6>
+              <hr />
+              <p>Agora faremos um par&aacute;grafo. A tag &apos;&lt;hr /&gt;&apos; no
+              c&oacute;digo serve para inserir uma linha horizontal, voc&ecirc; pode v&ecirc;-
+              la acima.</p>
+              <p>Note que ao criarmos outro, temos uma linha branca adicionada entre
+              eles</p>
+              Agora o texto est&aacute; sendo escrito diretamente no corpo do documento,
+              sem nenhuma formata&ccedil;&atilde;o. <br />
+              Use a tag vazia &apos;&lt;br /&gt;&apos; para quebrar linhas (saltar
+              linhas) sen&atilde;o o seu texto vai ficar bem estranho.
+              <!-- Finalmente, esse é um comentário. O que você escrever aqui não será
+              mostrado no documento exibido pelo navegador, mas pode ajudar a entender o que
+              você quer fazer com o código. -->
+              </body>
+              </html>
+                
+</body>
+</html>
