@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+              <meta charset="UTF-8">
+              <meta http-equiv="X-UA-Compatible" content="IE=edge">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Document</title>
+</head>
+<body>
+          <h1>    Listas</h1>
+              Nós temos três tipos de listas em HTML, listas ordenadas, listas não ordenadas e listas
+              de definições. Uma lista não ordenada simplesmente coloca um marcador antes de cada um de
+              seus elementos enquanto a lista ordenada numera-os. Além delas temos a lista de definições,
+              que se difere por não ser uma lista de itens. Ela é uma lista de termos e definições. Vamos
+              mostrar alguns exemplos para que você veja melhor. Crie um novo arquivo de texto como
+              nome 'listas.html'.
+             
+             
+              <p>Vejamos abaixo algumas listas e suas diferentes
+              caracter&iacute;sticas.</p>
+              <br />
+              <p>Primeiramente, uma lista n&atilde;o ordenada.</p>
+              <h4>Frutas</h4>
+              <ul>
+              <li>Ma&ccedil;&atilde;</li>
+              <li>Morango</li>
+              <li>Laranja</li>
+              <li>Lim&atilde;o</li>
+              <li>Abacaxi</li>
+              </ul>
+              <br />
+              <p>Veja agora uma lista ordenada.</p>
+              <h4>Resultados finais do campeonato de F&oacute;rmula 1 de 1991.</h4>
+              <ol>
+              <li>Senna</li>
+              <li>Mansell</li>
+              <li>Patrese</li>
+              <li>Berger</li>
+              <li>Prost</li>
+              <li>Piquet</li>
+              </ol>
+              <br />
+              <p>Vamos definir algumas coisas abaixo.</p>
+              <h4>Bebidas</h4>
+              <dl>
+              <dt>Caf&eacute;</dt>
+              <dd>Bebida quente e preta</dd>
+              <dt>Ch&aacute;</dt>
+              <dd>Tem de v&aacute;rias cores e pode ser servido tanto quente como
+              gelado</dd>
+              <dt>&Aacute;gua</dt>
+              <dd>Sem cor, e com certeza gelada! ;)</dd>
+              </dl>
+             <br>
+              O exemplo é auto-explicativo com relação aos tipos de listas empregados, mas alguns
+              detalhes serão deixados para você praticar. As listas possuem atributos também. Alguns deles
+              serão explicados aqui.
+              Em essência, você usa tags '<ul>' ou '<ol>' para iniciar suas listas (não ordenada e
+              ordenada), e '<li>' para cada um dos itens listados. As tags devem sempre ser acompanhadas
+              de fechamento. No caso da lista de definição você tem uma pequena alteração. Além da sua
+              tag, que é '<dl>' cada um dos elementos dela devem ter duas tags diferentes, a '<dt>' para o
+              item em si e '<dd>' para a definição do mesmo.
+              Para mudar um pouco suas listas ordenadas, tente coisas como:
+              <ol type="A">
+              Isso fará que ao invés de números, a lista seja ordenada com letras do alfabeto
+              maiúsculas.
+              A. Maçã
+              B. Morango
+              C. Laranja
+              D. Limão
+              E. Abacaxi
+              Usar
+              <ol type="a">
+              fará a mesma coisa, só que desta vez com letras minúsculas.
+              É ainda possível usar algarismos romanos para a numeração. Para isso, faça o seguinte.
+              <ol type="I">
+              O resultado será
+              I. Maçã
+              II. Morango
+              III. Laranja
+              IV. Limão
+              V. Abacaxi
+              Quer algarismos romanos minúsculos?
+              <ol type="i">
+              Prontinho =)
+              Para mudar o tipo de marcadores usados nas listas não ordenadas, use:
+              <ul type="disc">
+              <ul type="circle">
+              <ul type="square">
+              O primeiro valor do atributo type fará com que os marcadores sejam discos
+              preenchidos, o segundo discos vazios no meio (círculos) e o último mostrará quadrados. É bem
+              simples, tente todos eles.
+              Outra idéia interessante de listas é que é possível aninhar várias delas. No seu arquivo
+              'listas.html', adicione o seguinte código.
+              <p>Uma lista aninhada para complicar um pouco</p>
+              <h4>Bebidas e alguns de seus tipos</h4>
+              <ul type="circle">
+              <li>Caf&eacute;</li>
+              <ul type="square">
+              <li>com leite</li>
+              <li>preto</li>
+              <li>frapp&eacute;</li>
+              </ul>
+              <li>Ch&aacute;</li>
+              <ul type="square">
+              <li>mate</li>
+              <li>erva doce</li>
+              <li>camomila</li>
+              </ul>
+              <li>&Aacute;gua</li>
+              <ul type="square">
+              <li>com g&aacute;s</li>
+              <li>sem g&aacute;s</li>
+              </ul>
+              </ul>       
+</body>
+</html>
